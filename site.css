@@ -10,11 +10,12 @@ body{
 }
 header{
     color:aliceblue;
-    background-color: black;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
+    margin-bottom: -20px;
 }
 li{
     float: left;
@@ -115,10 +116,6 @@ li{
     z-index: -1;
     overflow: hidden;
 }
-#bg{
-    animation: mov-bg 2s infinite;
-    position: relative;
-}
 #nave{
     left: 80px;
     bottom: 0;
@@ -159,17 +156,90 @@ li{
 }
 .noticias{
     display: flex;
-    justify-content: space-between;
-    float: left;
 }
 #not1{
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    float: right;
 }
 
 #textnot1{
     color: black;
+}
+
+.tudo-historia{
+    background-color: black;
+    padding: 30px 30px 30px 30px;
+    color: white;
+}
+.tudo-historia h1{
+    text-align: center;
+}
+#hist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ #img-hist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#img-hist img{
+    width: 90%;
+    height: 70%;
+    text-align: center;
+} 
+#text-hist{
+    width: 50%;
+    font-size: 25px;
+}
+#text-hist h3{
+    text-align: center;
+}
+
+#img-jogab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#img-jogab img{
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+/* Estilos para o vídeo de fundo */
+video#bg {
+    position: absolute; /* Define a posição absoluta para o vídeo */
+    top: 0px; /* Ajuste essa altura de acordo com a altura do header */
+    left: 0; 
+    width: 100%; /* O vídeo cobre toda a largura */
+    height: calc(100vh - 60px); /* A altura do vídeo é a altura total da tela menos a altura do header */
+    z-index: -1; /* Coloca o vídeo atrás de outros elementos */
+    object-fit: cover; /* Corta o vídeo para cobrir o elemento */
+    opacity: 0.8; /* Controla a transparência do vídeo */
+    height: 100%;
+}
+
+#img-nucleo{
+    float: left;
+}
+#inicio-hist{
+    margin-top: 600px;
+    padding: 0;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to top, black, transparent);
+}
+#final-hist{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to bottom, black, transparent);
 }

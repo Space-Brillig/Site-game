@@ -3,27 +3,32 @@
     text-decoration: none;
 }
 body{
-    color: black;
+    color: white;
     margin: 0;
     font-family: Agency FB;
     line-height: 1.5;
 }
 header{
     color:aliceblue;
-    background-color: transparent;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
-    margin-bottom: -20px;
+    padding-bottom: 0px;
 }
 li{
     float: left;
     list-style: none;
     padding: 10px;
+    color: white;
+    font-size: 20px;
 }
 #esq li{
     margin-right: 20px;
+}
+#esq a{
+    text-decoration: none;
+    color: white;
 }
 
 #quem li{
@@ -42,8 +47,35 @@ li{
 }
 
 #dir a{
-    text-decoration: none;
+    
     color: aliceblue;
+}
+li#not1000{
+    cursor: pointer;
+}
+li#not1000:hover{
+    background-color: rgb(39, 39, 39);
+    
+}
+.click{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#click{
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+}
+#click:hover{
+    background-color: rgb(39, 39, 39);
 }
 
 #jogar{
@@ -58,7 +90,7 @@ li{
     width: 394px;
     z-index: -1;
     object-fit: cover;
-    opacity: 50%;
+    opacity: 1;
     filter: brightness(1);
 }
 .historiatudo{
@@ -84,6 +116,7 @@ li{
 }
 #logo{
     text-align: center;
+    margin: 0 20px 0 0;
 }
 #imagem-jogo{
     float: right;
@@ -112,7 +145,7 @@ li{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid white;
     z-index: -1;
     overflow: hidden;
 }
@@ -158,10 +191,15 @@ li{
     display: flex;
 }
 #not1{
-    display: flex;
-    justify-content: center;
     text-align: center;
-    align-items: center;
+}
+#not1 img{
+    border: 1px solid rgb(53, 53, 53);
+    overflow: hidden;
+    cursor: pointer;
+}
+#not1 img:hover{
+    scale: 1.1;
 }
 
 #textnot1{
@@ -212,7 +250,8 @@ li{
     width: 100%;
 }
 /* Estilos para o vídeo de fundo */
-video#bg {
+video#bg1 {
+    display: block;
     position: absolute; /* Define a posição absoluta para o vídeo */
     top: 0px; /* Ajuste essa altura de acordo com a altura do header */
     left: 0; 
@@ -220,15 +259,23 @@ video#bg {
     height: calc(100vh - 60px); /* A altura do vídeo é a altura total da tela menos a altura do header */
     z-index: -1; /* Coloca o vídeo atrás de outros elementos */
     object-fit: cover; /* Corta o vídeo para cobrir o elemento */
-    opacity: 0.8; /* Controla a transparência do vídeo */
+    opacity: 1; /* Controla a transparência do vídeo */
     height: 100%;
 }
+img#bg2{
+    z-index: -1000;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+
 
 #img-nucleo{
     float: left;
 }
 #inicio-hist{
-    margin-top: 600px;
+    margin-top: 500px;
     padding: 0;
     background-color: black;
     height: 50px;

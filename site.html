@@ -6,6 +6,7 @@
     <title>Jogo</title>
     <link rel="stylesheet" href="site.css">
     <script src="mov-nave.js"></script>
+    <script src="scroll.js"></script>
 </head>
 
 <body>
@@ -14,20 +15,28 @@
         <ul id="esq">
             <li id="jogar">Instalar</li>
             <li>Jogadores no mês: 999</li>
-            <li>Noticias</li>
+            <li id="not1000">Noticias</li>
+            <li class="a" id="not1000"><a href="sobre.html">Quem somos</a></li>
+            <li id="not1000">Demo</li>
+            <li id="not1000" class="a"><a href="site.html">História</a></li>
         </ul>
-        <div id="logo"><img src="" alt="logo"></div>
-        <ul id="dir">
-            <li><a href="sobre.html">Quem somos</a></li>
-            <li>Demo</li>
-            <li id="Historia"><a href="site.html">História</a></li>
-        </ul>
+        <div id="logo">
+            <img src="" alt="logo" id="logo">
+        </div>
+        
     </header>
 
-    <video autoplay muted loop id="bg">
-        <source src="img e videos/fort-teste.mp4" type="video/mp4">
-    </video>
-
+    <div>
+        <video autoplay muted loop id="bg1">
+            <source src="img e videos/fort-teste.mp4" type="video/mp4">
+        </video>
+        <div class="click">
+            <div id="click">
+                Jogue de graça
+            </div>
+        </div>
+    </div>
+    
     <div id="inicio-hist"></div>
     <div class="tudo-historia">
         <h1>O que é este jogo?</h1>
@@ -99,7 +108,7 @@
     </div>
     <br><br>
     <h2 id="noticia">Ultimas noticias</h2> <br>
-    <div class="noticias">
+    <div class="noticias" id="noticias">
         <div id="not1">   
 
                 <img src="img e videos/imagem-jogo.jpg" alt="not1" width="200px">

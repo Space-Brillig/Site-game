@@ -7,7 +7,6 @@ body{
     margin: 0;
     font-family: Agency FB;
     line-height: 1.5;
-    background-color: rgb(189, 189, 189);
 }
 header{
     color:aliceblue;
@@ -88,20 +87,26 @@ li#not1000:hover{
     background-color: rgb(0, 107, 107);
 }
 
-#fotos{
+#conteudo{
     display: flex;
+}
+
+#conteudo img{
+    width: 250px;
+    height: 520px;
+    border: 3px solid black;    
     margin: 20px;
-    justify-content: space-between;
 }
 
-.Des{
-    margin: 45px;
-    
+
+
+#biografia{
+    margin: 20px;
+    background-color: rgb(226, 226, 226);
+    border: black solid 0.8px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 800px;
 }
 
-.Des img{
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    border-radius: 50%;
-}
+

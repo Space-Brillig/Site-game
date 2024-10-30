@@ -5,7 +5,7 @@
 body{
     color: white;
     margin: 0;
-    font-family: Agency FB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 }
 header{
@@ -73,7 +73,8 @@ li#not1000:hover{
     align-items: center;
     width: 120px;
     height: 65px;
-    font-size: 18px;
+    font-size: 15px;
+    text-align: center;
 }
 #click:hover{
     background-color: rgb(39, 39, 39);
@@ -315,7 +316,8 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: rgb(26, 26, 26);
-    height: 180px;
+    height: 300px;
+    bottom: 0;
 }
 
 .footer {
